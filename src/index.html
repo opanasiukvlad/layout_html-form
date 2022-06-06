@@ -12,79 +12,79 @@
   </head>
   <body>
     <script type="text/javascript" src="./main.js"></script>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="get"></form>
-    <fieldset>
-      <legend>Personal information</legend>
-      <label class="field">Surename:
-        <input type="text" name="surename"
-        autocomplete="off" required>
-      </label>
-      <label class="field small_gap">Name:
-        <input type="text" name="name"
-        autocomplete="off" required>
-      </label>
-      <label class="field small_gap">How old are You?
-        <input type="number" name="age"
-        min="1" max="100"
-        value="12">
-      </label>
-      <label class="field small_gap">Full date of birth:
-        <input type="date" name="birthDate"
-        required>
-      </label>
-      <label class="field small_gap">I accept the term of the agreement
-        <input type="checkbox" name="acceptAgreement"
-        required>
-      </label>
-    </fieldset>
-    <fieldset class="big_gap">
-      <legend>Registration</legend>
-      <label class="field"> E-mail:
-        <input type="email" name="email"
-        placeholder="email@example.com">
-      </label>
-      <label class="field small_gap"> Password:
-        <input type="password" name="password">
-      </label>
-    </fieldset>
-    <fieldset class="big_gap">
-      <legend>An interesting fact about you!</legend>
-      <label class="field"> Do you love cats?
-        <input type="radio" name="loveCats"> Yes
-        <input type="radio" name="loveCats"> No
-      </label>
-      <label class="field small_gap"> What is your favorite color?
-        <input type="color" name="favoriteColor">
-      </label>
-      <label class="field small_gap"> What time do you go to bed?
-        <input type="time" name="goingSleep">
-      </label>
-      <label class="field small_gap"> What are your favorite brand of cars?
-        <select name="favoriteCar" multiple>
-          <option value="bwm">BMW</option>
-          <option value="audi">Audi</option>
-          <option value="lada">Lada</option>
-        </select>
-      </label>
-      <label class="field small_gap"> How do you rate our work?
-        <input type="range" name="rateUs"
-        minlength="1" maxlength="10"
-        step="1" value="1">
-      </label>
-    </fieldset>
-    <fieldset class="big_gap">
-      <legend>Additional info:</legend>
-      <label class="field">Comments:
-        <textarea name="comments"></textarea>
-      </label>
-      <label class="field small_gap">Would you reccomend us?
-        <select name="wouldYouReccomend">
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
-        </select>
-      </label>
-    </fieldset>
-    <button type="submit" class="big_gap">Submit</button>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset class="big_gap">
+        <legend>Personal information</legend>
+        <label class="field small_gap">Surename:
+          <input type="text" name="surename"
+          autocomplete="off" required>
+        </label>
+        <label class="field small_gap">Name:
+          <input type="text" name="name"
+          autocomplete="off" required>
+        </label>
+        <label class="field small_gap">How old are You?
+          <input type="number" name="age"
+          min="1" max="100"
+          value="12">
+        </label>
+        <label class="field small_gap">Full date of birth:
+          <input type="date" name="birthDate"
+          required>
+        </label>
+        <label class="field">I accept the term of the agreement
+          <input type="checkbox" name="acceptAgreement"
+          required>
+        </label>
+      </fieldset>
+      <fieldset class="big_gap">
+        <legend>Registration</legend>
+        <label class="field small_gap"> E-mail:
+          <input type="email" name="email"
+          placeholder="email@example.com">
+        </label>
+        <label class="field"> Password:
+          <input type="password" name="password">
+        </label>
+      </fieldset>
+      <fieldset class="big_gap">
+        <legend>An interesting fact about you!</legend>
+        <label class="field small_gap"> Do you love cats?
+          <input type="radio" name="loveCats"> Yes
+          <input type="radio" name="loveCats"> No
+        </label>
+        <label class="field small_gap"> What is your favorite color?
+          <input type="color" name="favoriteColor">
+        </label>
+        <label class="field small_gap"> What time do you go to bed?
+          <input type="time" name="goingSleep">
+        </label>
+        <label class="field small_gap"> What are your favorite brand of cars?
+          <select name="favoriteCar" multiple>
+            <option value="bwm">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label>
+        <label class="field"> How do you rate our work?
+          <input type="range" name="rateUs"
+          minlength="1" maxlength="10"
+          step="1" value="1">
+        </label>
+      </fieldset>
+      <fieldset class="big_gap">
+        <legend>Additional info:</legend>
+        <label class="field small_gap">Comments:
+          <textarea name="comments"></textarea>
+        </label>
+        <label class="field">Would you reccomend us?
+          <select name="wouldYouReccomend">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit" class="big_gap">Submit</button>
     </form>
   </body>
 </html>

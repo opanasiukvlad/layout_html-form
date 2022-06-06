@@ -4,9 +4,14 @@
 }
 
 .small_gap {
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .big_gap {
-  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.big_gap:last-child,
+.small_gap:last-child {
+  margin-bottom: 0;
 }
